@@ -8,6 +8,7 @@ using System.Threading.Tasks;
 
 namespace Core.Extensions
 {
+    //JWT içinde kullanıcının bilgilerini de tutmak için  kullanıyoruz 
     public static class ClaimExtensions
     {
         public static void AddEmail(this ICollection<Claim> claims, string email)

@@ -23,6 +23,8 @@ namespace Core.Utilities.Security.Hashing
         //sonradan sisteme giren kişinin girdiği password'ün bizim veri kaynağımızdaki hashle eşleşip eşleşmediğine bakıyor
         public static bool VerifyPasswordHash(string password, byte[] passwordHash, byte[] passwordSalt)
         {
+            //kullanıcının hash ile veritabanındaki hash eşleşiyor mu onu kontrol ediyoruz
+
             using (var hmac = new System.Security.Cryptography.HMACSHA512(passwordSalt))
             {
                var computedHash = hmac.ComputeHash(Encoding.UTF8.GetBytes(password));

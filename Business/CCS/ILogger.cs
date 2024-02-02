@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Business.CSS
+namespace Business.CCS
 {
     public interface ILogger
     {

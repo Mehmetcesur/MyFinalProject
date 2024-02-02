@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Core.Extensions
 {
+    //bir kişinin claimlerine ulaşmak için claimsprincipal dediğimde claimrolesları döndür diyoruz. 
     public static class ClaimsPrincipalExtensions
     {
         public static List<string> Claims(this ClaimsPrincipal claimsPrincipal, string claimType)
